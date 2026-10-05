@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "MindfulBrake - Reels & Shorts Interceptor",
+  "version": "1.0.0",
+  "description": "Intercepts short-form algorithmic dopamine loops using an open-weight AI focus guardian.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.instagram.com/*",
+        "*://*.youtube.com/*",
+        "*://*.tiktok.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
